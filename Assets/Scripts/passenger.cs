@@ -100,7 +100,7 @@ public class passenger : MonoBehaviour {
 			 */
 			Vector3 center_dir = new Vector3(0.0f, 0.0f, 0.0f);
 			float center_dist = target.z - rb.position.z;
-			float center_weight = Mathf.Max(0.0f, -1.0f - rb.position.x + ctr_eps * Mathf.Abs(center_dist));
+			float center_weight = Mathf.Max(0.0f, -1.0f + target.x - rb.position.x + ctr_eps * Mathf.Abs(center_dist));
 			center_dir.z = center_weight * Mathf.Sign(center_dist);
 			center_dir.z = Mathf.Min(1.0f, center_dir.z);
 
