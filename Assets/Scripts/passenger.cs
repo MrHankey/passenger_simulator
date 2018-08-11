@@ -20,6 +20,15 @@ public class passenger : MonoBehaviour {
 	void FixedUpdate () {
 		// SBahn door
 		Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
+		GameObject[] doors = GameObject.FindGameObjectsWithTag("door");
+		foreach (GameObject d in doors) {
+			Vector3 door_pos = d.GetComponent<Transform>().position;
+			if ((rb.position - door_pos).magnitude < (rb.position - target).magnitude) {
+				target = door_pos;
+			}
+		}
+
+		// check if we are already inside
 		if (rb.position.x < 0.0 && Mathf.Abs(target.z - rb.position.z) < 1.0) {
 			inside_train = true;
 		}
