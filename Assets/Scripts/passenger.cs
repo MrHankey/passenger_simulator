@@ -43,8 +43,9 @@ public class passenger : MonoBehaviour {
 			 *____/  \____ _0
 			 */
 			Vector3 escape_dir = new Vector3(0.0f, 0.0f, 0.0f);
-			Collider[] others = Physics.OverlapSphere(rb.position, 20);
+			Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
 			foreach (Collider o in others) {
+				if (o.gameObject.tag != "enemy")  continue;
 				if (!o.GetComponent<Rigidbody>()) continue;
 				Vector3 o_pos  = o.GetComponent<Rigidbody>().position;
 				Vector3 o_dist = o_pos - rb.position;
