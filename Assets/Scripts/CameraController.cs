@@ -6,6 +6,7 @@ public class CameraController : MonoBehaviour {
 
     public GameObject player;
     private Vector3 offset;
+    private float rotY;
 
 	// Use this for initialization
 	void Start () {
@@ -15,10 +16,11 @@ public class CameraController : MonoBehaviour {
 	// Update is called once per frame
 	void LateUpdate () {
         //transform.position = player.transform.position + offset;
-        float rotationY = Input.GetAxis("Mouse Y") * 5.0f;
-        rotationY *= -1.0f;
-        //rotation = Mathf.Clamp(rotationY, -90, 90);
+        rotY += Input.GetAxis("Mouse Y") * 5.0f;
+        rotY = Mathf.Clamp(rotY, -89, 89);
 
-        transform.Rotate(new Vector3(rotationY, 0.0f, 0.0f));
+        float rotX = transform.eulerAngles.y;
+        transform.rotation = Quaternion.Euler(-rotY, rotX, 0.0f);
+        //transform.rotation = Quaternion.Euler(rot);
     }
 }
