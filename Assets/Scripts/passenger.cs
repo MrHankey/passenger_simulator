@@ -36,15 +36,17 @@ public class passenger : MonoBehaviour {
 					}
 				}
 
-				// check if we are already inside
-				if (rb.position.x < 0.0 && (target - rb.position).sqrMagnitude < 1.0) {
+                // check if we are already inside
+                Vector3 dist = target - rb.position;
+                dist.y = 0.0f;
+
+                if (dist.sqrMagnitude < 2.0) {
 					state = State.SearchSeat;
-					goto case State.SearchSeat;
 				}
 				break;
 
 			case State.SearchSeat:
-				renderer.GetComponent<Renderer>().color = new Color(0,1,0);
+				//GetComponent<Renderer>().color = new Color(0,1,0);
 				target = new Vector3(-100000.0f, 0.0f, 0.0f);
 				GameObject[] seats = GameObject.FindGameObjectsWithTag("seat");
 				foreach (GameObject s in seats) {
@@ -57,7 +59,6 @@ public class passenger : MonoBehaviour {
 				// check if we are already inside
 				if (rb.position.x < 0.0 && (target - rb.position).sqrMagnitude < 1.0) {
 					state = State.Done;
-					goto case State.Done;
 				}
 				break;
 
