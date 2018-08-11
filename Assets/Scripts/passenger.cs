@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum State {
+	SearchDoor,
+	SearchSeat,
+	Done,
+}
+
 public class passenger : MonoBehaviour {
 
 	public float dst_speed;
@@ -10,7 +16,7 @@ public class passenger : MonoBehaviour {
 	public float ctr_speed;
 	public float ctr_eps = 1;
 	private Rigidbody rb;
-	private bool inside_train = false;
+	private State state = State.SearchDoor;
 
 	void Start() {
 		rb = GetComponent<Rigidbody>();
@@ -18,22 +24,49 @@ public class passenger : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
-		// SBahn door
 		Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
-		GameObject[] doors = GameObject.FindGameObjectsWithTag("door");
-		foreach (GameObject d in doors) {
-			Vector3 door_pos = d.GetComponent<Transform>().position;
-			if ((rb.position - door_pos).magnitude < (rb.position - target).magnitude) {
-				target = door_pos;
-			}
+		switch (state) {
+			case State.SearchDoor:
+				target = new Vector3(-100000.0f, 0.0f, 0.0f);
+				GameObject[] doors = GameObject.FindGameObjectsWithTag("door");
+				foreach (GameObject d in doors) {
+					Vector3 door_pos = d.GetComponent<Transform>().position;
+					if ((rb.position - door_pos).magnitude < (rb.position - target).magnitude) {
+						target = door_pos;
+					}
+				}
+
+				// check if we are already inside
+				if (rb.position.x < 0.0 && (target - rb.position).sqrMagnitude < 1.0) {
+					state = State.SearchSeat;
+					goto case State.SearchSeat;
+				}
+				break;
+
+			case State.SearchSeat:
+				renderer.GetComponent<Renderer>().color = new Color(0,1,0);
+				target = new Vector3(-100000.0f, 0.0f, 0.0f);
+				GameObject[] seats = GameObject.FindGameObjectsWithTag("seat");
+				foreach (GameObject s in seats) {
+					Vector3 seat_pos = s.GetComponent<Transform>().position;
+					if ((rb.position - seat_pos).magnitude < (rb.position - target).magnitude) {
+						target = seat_pos;
+					}
+				}
+
+				// check if we are already inside
+				if (rb.position.x < 0.0 && (target - rb.position).sqrMagnitude < 1.0) {
+					state = State.Done;
+					goto case State.Done;
+				}
+				break;
+
+			case State.Done:
+				break;
 		}
 
-		// check if we are already inside
-		if (rb.position.x < 0.0 && Mathf.Abs(target.z - rb.position.z) < 1.0) {
-			inside_train = true;
-		}
-		if (!inside_train) {
-			// I want to go into the SBahn
+		if (state != State.Done) {
+			// go to target
 			Vector3 dst_dir = (target -  rb.position).normalized;
 			dst_dir.y = 0.0f;
 
@@ -72,8 +105,6 @@ public class passenger : MonoBehaviour {
 			center_dir.z = Mathf.Min(1.0f, center_dir.z);
 
 			rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
-		} else {
-			rb.AddForce(new Vector3(0.0f, 0.0f, -1.0f));
 		}
 	}
 }
