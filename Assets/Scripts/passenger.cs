@@ -18,9 +18,9 @@ public class passenger : MonoBehaviour {
 	private Rigidbody rb;
 	private State state = State.SearchDoor;
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnTriggerEnter(Collider collision)
     {
-        //collision.gameObject.transform.position
         //foreach (ContactPoint contact in collision.contacts)
         //{
         //    Debug.DrawRay(contact.point, contact.normal, Color.red, 0.01f, false);
