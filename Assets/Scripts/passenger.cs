@@ -135,10 +135,10 @@ public class passenger : MonoBehaviour {
 			 *     \____/     _0
 			 */
 			center_dir = new Vector3(0.0f, 0.0f, 0.0f);
-			float center_dist = target.z - rb.position.z;
-			float center_weight = Mathf.Max(0.0f, -1.0f + target.x - rb.position.x + ctr_eps * Mathf.Abs(center_dist));
-			center_dir.z = center_weight * Mathf.Sign(center_dist);
-			center_dir.z = Mathf.Min(1.0f, center_dir.z);
+			float center_dist = target.x - rb.position.x;
+			float center_weight = Mathf.Max(0.0f, -1.0f + ctr_eps * Mathf.Abs(center_dist) + target.z - rb.position.z);
+			center_dir.x = center_weight * Mathf.Sign(center_dist);
+			center_dir.x = Mathf.Min(1.0f, center_dir.x);
 
 		}
 		rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
