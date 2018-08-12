@@ -75,7 +75,7 @@ public class passenger : MonoBehaviour {
 
                     // Apply impulse towards collider
                     Vector3 dir = collision.impulse.normalized;
-                    rb.AddForce(dir * aggro_strength, ForceMode.Impulse);
+                    rb.AddForce(dir * aggro_strength * rb.mass, ForceMode.Impulse);
                 }
             }
         }
@@ -165,6 +165,10 @@ public class passenger : MonoBehaviour {
 		}
         //rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
         Vector3 finalVelocity = dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir;
-        AddTargetVelocityImpulse(finalVelocity);
+        if (finalVelocity.magnitude > 0.01f)
+        {
+            AddTargetVelocityImpulse(finalVelocity);
+            transform.forward = finalVelocity.normalized;
+        }
 	}
 }
