@@ -27,7 +27,6 @@ public class GameMaster : MonoBehaviour {
 		}
 
 		train = GameObject.FindGameObjectWithTag("Train");
-		train.transform.position += new Vector3(startPos, 0f, 0f);
 	}
 	
 	// Update is called once per frame
