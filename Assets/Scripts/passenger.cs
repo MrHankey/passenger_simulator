@@ -10,6 +10,10 @@ public enum State {
 
 public class passenger : MonoBehaviour {
 
+    public float maxVelocity = 1.4f;
+    public float maxAccel = 5;
+    public float maxForce = 5;
+
 	public float dst_speed;
 	public float esc_speed;
 	public float esc_eps = 1;
@@ -23,6 +27,24 @@ public class passenger : MonoBehaviour {
     public float aggro_strength = 10;
     public float aggro_cooldown = 2; // seconds
     private float aggro_next = 0;
+
+    private void AddTargetVelocityImpulse(Vector3 targetVelocity)
+    {
+        targetVelocity = Vector3.ClampMagnitude(targetVelocity, maxVelocity);
+        // Apply a force that attempts to reach our target velocity
+        Vector3 velocity = rb.velocity;
+        Vector3 velocityChange = (targetVelocity - velocity);
+        // Maybe re-enable
+        //velocityChange.x = Mathf.Clamp(velocityChange.x, -maxAccel, maxAccel);
+        //velocityChange.z = Mathf.Clamp(velocityChange.z, -maxAccel, maxAccel);
+        //velocityChange.y = 0;
+
+        //clamp max force
+        velocityChange = Vector3.ClampMagnitude(velocityChange, maxForce);
+        rb.AddForce(velocityChange, ForceMode.VelocityChange);
+
+        //Debug.DrawRay(transform.position, velocityChange, Color.red, 0.01f, false);
+    }
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -50,10 +72,10 @@ public class passenger : MonoBehaviour {
                 if (collision.gameObject.CompareTag("enemy")) a = aggro_vs_other;
                 if (random <= a) {
                     Rigidbody player_rb = collision.gameObject.GetComponent<Rigidbody>();
-                    Vector3 dir = -collision.impulse.normalized;
-                    // enemy pushes player
-                    player_rb.AddForce(dir * aggro_strength, ForceMode.Impulse);
-                    rb.AddForce(dir * aggro_strength / 2.5f, ForceMode.Impulse);
+
+                    // Apply impulse towards collider
+                    Vector3 dir = collision.impulse.normalized;
+                    rb.AddForce(dir * aggro_strength, ForceMode.Impulse);
                 }
             }
         }
@@ -141,6 +163,8 @@ public class passenger : MonoBehaviour {
 			center_dir.x = Mathf.Min(1.0f, center_dir.x);
 
 		}
-		rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
+        //rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
+        Vector3 finalVelocity = dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir;
+        AddTargetVelocityImpulse(finalVelocity);
 	}
 }
