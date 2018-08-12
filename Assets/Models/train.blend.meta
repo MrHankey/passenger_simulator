@@ -51,6 +51,68 @@ ModelImporter:
     100090: seat_9
     100092: waggon_2
     100094: waggon_3
+    100096: Cube_008
+    100098: Cube_009
+    100100: Cube_010
+    100102: Cube_011
+    100104: Cube_012
+    100106: Cube_013
+    100108: Cube_014
+    100110: Cube_015
+    100112: Cube_016
+    100114: Cube_017
+    100116: dachfront1
+    100118: dachfront1_001
+    100120: dachmitte
+    100122: floor_001
+    100124: floor_002
+    100126: front
+    100128: front_001
+    100130: frontwindow
+    100132: frontwindow_001
+    100134: lightfront1
+    100136: lightfront1_001
+    100138: lightfront1_fassung
+    100140: lightfront1_fassung_001
+    100142: lightfront2
+    100144: lightfront2_001
+    100146: lightfront2_fassung
+    100148: lightfront2_fassung_001
+    100150: radkaschte_001
+    100152: radkaschte_002
+    100154: seat_008
+    100156: seat_009
+    100158: seat_010
+    100160: seat_011
+    100162: seat_012
+    100164: seat_013
+    100166: seat_014
+    100168: seat_015
+    100170: seat_016
+    100172: seat_017
+    100174: seat_018
+    100176: seat_019
+    100178: seat_020
+    100180: seat_021
+    100182: seat_022
+    100184: seat_023
+    100186: stromabnehmer
+    100188: stromabnehmer_001
+    100190: verbinder1
+    100192: verbinder2
+    100194: waggon_000
+    100196: wheels1
+    100198: wheels10
+    100200: wheels11
+    100202: wheels12
+    100204: wheels2
+    100206: wheels3
+    100208: wheels4
+    100210: wheels5
+    100212: wheels6
+    100214: wheels7
+    100216: wheels8
+    100218: wheels9
     400000: Cube_000
     400002: Cube_001
     400004: Cube_002
@@ -99,6 +161,68 @@ ModelImporter:
     400090: seat_9
     400092: waggon_2
     400094: waggon_3
+    400096: Cube_008
+    400098: Cube_009
+    400100: Cube_010
+    400102: Cube_011
+    400104: Cube_012
+    400106: Cube_013
+    400108: Cube_014
+    400110: Cube_015
+    400112: Cube_016
+    400114: Cube_017
+    400116: dachfront1
+    400118: dachfront1_001
+    400120: dachmitte
+    400122: floor_001
+    400124: floor_002
+    400126: front
+    400128: front_001
+    400130: frontwindow
+    400132: frontwindow_001
+    400134: lightfront1
+    400136: lightfront1_001
+    400138: lightfront1_fassung
+    400140: lightfront1_fassung_001
+    400142: lightfront2
+    400144: lightfront2_001
+    400146: lightfront2_fassung
+    400148: lightfront2_fassung_001
+    400150: radkaschte_001
+    400152: radkaschte_002
+    400154: seat_008
+    400156: seat_009
+    400158: seat_010
+    400160: seat_011
+    400162: seat_012
+    400164: seat_013
+    400166: seat_014
+    400168: seat_015
+    400170: seat_016
+    400172: seat_017
+    400174: seat_018
+    400176: seat_019
+    400178: seat_020
+    400180: seat_021
+    400182: seat_022
+    400184: seat_023
+    400186: stromabnehmer
+    400188: stromabnehmer_001
+    400190: verbinder1
+    400192: verbinder2
+    400194: waggon_000
+    400196: wheels1
+    400198: wheels10
+    400200: wheels11
+    400202: wheels12
+    400204: wheels2
+    400206: wheels3
+    400208: wheels4
+    400210: wheels5
+    400212: wheels6
+    400214: wheels7
+    400216: wheels8
+    400218: wheels9
     2100000: Material_001
     2100002: Material_002
     2100004: Material_003
@@ -112,6 +236,8 @@ ModelImporter:
     2100020: Material_011
     2100022: Material_010
     2100024: unnamed
+    2100026: Material
+    2100028: Material_000
     2300000: Cube_000
     2300002: Cube_001
     2300004: Cube_002
@@ -159,6 +285,68 @@ ModelImporter:
     2300088: seat_9
     2300090: waggon_2
     2300092: waggon_3
+    2300094: Cube_008
+    2300096: Cube_009
+    2300098: Cube_010
+    2300100: Cube_011
+    2300102: Cube_012
+    2300104: Cube_013
+    2300106: Cube_014
+    2300108: Cube_015
+    2300110: Cube_016
+    2300112: Cube_017
+    2300114: dachfront1
+    2300116: dachfront1_001
+    2300118: dachmitte
+    2300120: floor_001
+    2300122: floor_002
+    2300124: front
+    2300126: front_001
+    2300128: frontwindow
+    2300130: frontwindow_001
+    2300132: lightfront1
+    2300134: lightfront1_001
+    2300136: lightfront1_fassung
+    2300138: lightfront1_fassung_001
+    2300140: lightfront2
+    2300142: lightfront2_001
+    2300144: lightfront2_fassung
+    2300146: lightfront2_fassung_001
+    2300148: radkaschte_001
+    2300150: radkaschte_002
+    2300152: seat_008
+    2300154: seat_009
+    2300156: seat_010
+    2300158: seat_011
+    2300160: seat_012
+    2300162: seat_013
+    2300164: seat_014
+    2300166: seat_015
+    2300168: seat_016
+    2300170: seat_017
+    2300172: seat_018
+    2300174: seat_019
+    2300176: seat_020
+    2300178: seat_021
+    2300180: seat_022
+    2300182: seat_023
+    2300184: stromabnehmer
+    2300186: stromabnehmer_001
+    2300188: verbinder1
+    2300190: verbinder2
+    2300192: waggon_000
+    2300194: wheels1
+    2300196: wheels10
+    2300198: wheels11
+    2300200: wheels12
+    2300202: wheels2
+    2300204: wheels3
+    2300206: wheels4
+    2300208: wheels5
+    2300210: wheels6
+    2300212: wheels7
+    2300214: wheels8
+    2300216: wheels9
     3300000: Cube_000
     3300002: Cube_001
     3300004: Cube_002
@@ -206,6 +394,68 @@ ModelImporter:
     3300088: seat_9
     3300090: waggon_2
     3300092: waggon_3
+    3300094: Cube_008
+    3300096: Cube_009
+    3300098: Cube_010
+    3300100: Cube_011
+    3300102: Cube_012
+    3300104: Cube_013
+    3300106: Cube_014
+    3300108: Cube_015
+    3300110: Cube_016
+    3300112: Cube_017
+    3300114: dachfront1
+    3300116: dachfront1_001
+    3300118: dachmitte
+    3300120: floor_001
+    3300122: floor_002
+    3300124: front
+    3300126: front_001
+    3300128: frontwindow
+    3300130: frontwindow_001
+    3300132: lightfront1
+    3300134: lightfront1_001
+    3300136: lightfront1_fassung
+    3300138: lightfront1_fassung_001
+    3300140: lightfront2
+    3300142: lightfront2_001
+    3300144: lightfront2_fassung
+    3300146: lightfront2_fassung_001
+    3300148: radkaschte_001
+    3300150: radkaschte_002
+    3300152: seat_008
+    3300154: seat_009
+    3300156: seat_010
+    3300158: seat_011
+    3300160: seat_012
+    3300162: seat_013
+    3300164: seat_014
+    3300166: seat_015
+    3300168: seat_016
+    3300170: seat_017
+    3300172: seat_018
+    3300174: seat_019
+    3300176: seat_020
+    3300178: seat_021
+    3300180: seat_022
+    3300182: seat_023
+    3300184: stromabnehmer
+    3300186: stromabnehmer_001
+    3300188: verbinder1
+    3300190: verbinder2
+    3300192: waggon_000
+    3300194: wheels1
+    3300196: wheels10
+    3300198: wheels11
+    3300200: wheels12
+    3300202: wheels2
+    3300204: wheels3
+    3300206: wheels4
+    3300208: wheels5
+    3300210: wheels6
+    3300212: wheels7
+    3300214: wheels8
+    3300216: wheels9
     4300000: Cube_001
     4300002: Cube_002
     4300004: waggon
@@ -253,6 +503,68 @@ ModelImporter:
     4300088: seat_1
     4300090: Cylinder
     4300092: Cylinder_001
+    4300094: wheels1
+    4300096: stromabnehmer_001
+    4300098: Cube_017
+    4300100: Cube_016
+    4300102: Cube_015
+    4300104: Cube_014
+    4300106: Cube_013
+    4300108: Cube_012
+    4300110: Cube_011
+    4300112: Cube_010
+    4300114: stromabnehmer
+    4300116: Cube_009
+    4300118: Cube_008
+    4300120: front_001
+    4300122: lightfront2_001
+    4300124: lightfront1_fassung_001
+    4300126: lightfront2_fassung_001
+    4300128: frontwindow_001
+    4300130: lightfront1_001
+    4300132: dachmitte
+    4300134: front
+    4300136: lightfront1
+    4300138: frontwindow
+    4300140: lightfront2_fassung
+    4300142: lightfront1_fassung
+    4300144: lightfront2
+    4300146: verbinder1
+    4300148: verbinder2
+    4300150: waggon_000
+    4300152: seat_015
+    4300154: seat_014
+    4300156: seat_013
+    4300158: seat_012
+    4300160: seat_011
+    4300162: seat_010
+    4300164: seat_009
+    4300166: seat_008
+    4300168: radkaschte_001
+    4300170: floor_001
+    4300172: seat_023
+    4300174: seat_022
+    4300176: seat_021
+    4300178: seat_020
+    4300180: seat_019
+    4300182: seat_018
+    4300184: seat_017
+    4300186: seat_016
+    4300188: radkaschte_002
+    4300190: floor_002
+    4300192: dachfront1
+    4300194: dachfront1_001
+    4300196: wheels2
+    4300198: wheels3
+    4300200: wheels4
+    4300202: wheels5
+    4300204: wheels6
+    4300206: wheels12
+    4300208: wheels11
+    4300210: wheels10
+    4300212: wheels9
+    4300214: wheels8
+    4300216: wheels7
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs

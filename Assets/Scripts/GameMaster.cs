@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour {
 
@@ -16,6 +17,9 @@ public class GameMaster : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		startTime = -1f;
+
+		GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
+		canvas.GetComponent<Canvas>().enabled = false;
 
 		playerGoals = GameObject.FindGameObjectsWithTag("ZonePlayerGoal");
 		foreach (GameObject goal in playerGoals) {
@@ -44,10 +48,28 @@ public class GameMaster : MonoBehaviour {
 
 		if (Time.time - startTime > departureTime) {
 			train.transform.position += new Vector3(
-				Time.deltaTime * vel * velocityFactor,
+				Time.deltaTime * 2 * vel * velocityFactor,
 				0f,
 				0f
 			);
+		}
+
+		if (Time.time - startTime > departureTime + 10f) {
+			GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
+			canvas.GetComponent<Canvas>().enabled = true;
+
+			GameObject text = GameObject.Find("Canvas/Result");
+			text.GetComponent<Text>().text = "Loss";
+
+			GameObject player = GameObject.FindGameObjectWithTag("Player");
+			foreach (GameObject zone in playerGoals) {
+				if (player.GetComponent<Collider>().bounds.Intersects(
+					zone.GetComponent<Collider>().bounds
+				)) {
+					text.GetComponent<Text>().text = "Win";
+					break;
+				}
+			}
 		}
 	}
 }
