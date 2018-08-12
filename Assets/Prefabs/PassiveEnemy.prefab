@@ -112,15 +112,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a6ffec3d2f6ab247b6c3e870c2a6919, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dst_speed: 0.5
-  esc_speed: 0.5
+  dst_speed: 3
+  esc_speed: 2
   esc_eps: 2
-  ctr_speed: 0.5
-  ctr_eps: 2
-  aggro: 0
-  aggro_vs_other: 0
-  aggro_strength: 10
-  aggro_cooldown: 2
+  ctr_speed: 3
+  ctr_eps: 3
+  aggro: 0.1
+  aggro_vs_other: 0.1
+  aggro_strength: 6
+  aggro_cooldown: 3
 --- !u!136 &136996249628487282
 CapsuleCollider:
   m_ObjectHideFlags: 1
