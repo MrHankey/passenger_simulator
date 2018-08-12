@@ -156,6 +156,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -205,6 +234,35 @@ Prefab:
     - target: {fileID: 4594989036242640, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -40.789
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -345,12 +403,21 @@ Prefab:
     - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
         type: 2}
       propertyPath: aggro
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
         type: 2}
       propertyPath: aggro_cooldown
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -464,6 +531,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -510,6 +606,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -555,6 +680,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (67)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -648,6 +802,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (55)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -693,6 +876,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (12)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -740,6 +952,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (51)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -786,6 +1027,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (62)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -831,6 +1101,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (22)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -963,6 +1262,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (77)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1008,6 +1336,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (43)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1140,6 +1497,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (71)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1185,6 +1571,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (60)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1232,6 +1647,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (33)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1278,6 +1722,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (54)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1323,6 +1796,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1455,6 +1957,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (66)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1500,6 +2031,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (52)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1547,6 +2107,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (72)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1592,6 +2181,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (78)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1639,6 +2257,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1684,6 +2331,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -1823,6 +2499,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (69)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1869,6 +2574,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (44)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -1914,6 +2648,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (80)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2007,6 +2770,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (38)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2052,6 +2844,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (40)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2188,6 +3009,35 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -40.789
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2233,6 +3083,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (31)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2285,6 +3164,35 @@ Prefab:
       propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2326,6 +3234,35 @@ Prefab:
     - target: {fileID: 4594989036242640, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2373,6 +3310,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (48)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2418,6 +3384,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (58)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2465,6 +3460,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (21)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2510,6 +3534,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (70)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2642,6 +3695,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (32)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2687,6 +3769,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2776,6 +3887,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (68)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2821,6 +3961,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (74)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2868,6 +4037,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -2913,6 +4111,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (16)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3025,6 +4252,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (56)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3070,6 +4326,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (42)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3117,6 +4402,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (37)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3162,6 +4476,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (73)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3209,6 +4552,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3255,6 +4627,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (26)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3300,6 +4701,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (57)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3351,6 +4781,35 @@ Prefab:
       propertyPath: m_LocalEulerAnglesHint.y
       value: -40.789
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3396,6 +4855,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3443,6 +4931,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (25)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3488,6 +5005,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (9)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3620,6 +5166,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (65)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3665,6 +5240,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3712,6 +5316,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (79)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3757,6 +5390,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (10)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3804,6 +5466,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (49)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -3849,6 +5540,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -3981,6 +5701,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (64)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4026,6 +5775,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (61)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4073,6 +5851,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (76)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4118,6 +5925,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (34)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4165,6 +6001,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (46)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4210,6 +6075,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4344,6 +6238,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (24)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4389,6 +6312,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (47)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4436,6 +6388,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (36)
       objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4481,6 +6462,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4574,6 +6584,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (50)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4619,6 +6658,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4666,6 +6734,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (63)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4711,6 +6808,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (35)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4758,6 +6884,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (53)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4803,6 +6958,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (75)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4850,6 +7034,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (20)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4895,6 +7108,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (39)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -4942,6 +7184,35 @@ Prefab:
       propertyPath: m_Name
       value: PassiveEnemy (23)
       objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
   m_IsPrefabAsset: 0
@@ -4987,6 +7258,35 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (45)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -5037,6 +7337,35 @@ Prefab:
     - target: {fileID: 4594989036242640, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: -40.789
+      objectReference: {fileID: 0}
+    - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
+      propertyPath: m_TagString
+      value: enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_strength
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: ctr_speed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_vs_other
+      value: 0.1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}

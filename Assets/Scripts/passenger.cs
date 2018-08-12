@@ -19,8 +19,9 @@ public class passenger : MonoBehaviour {
 	private State state = State.SearchDoor;
 
     public float aggro;  // in [0,1)
+    public float aggro_vs_other;  // in [0,1)
     public float aggro_strength = 10;
-    public float aggro_cooldown; // seconds
+    public float aggro_cooldown = 2; // seconds
     private float aggro_next = 0;
 
     private void OnTriggerEnter(Collider collision)
@@ -40,11 +41,14 @@ public class passenger : MonoBehaviour {
     }
 
     void OnCollisionStay(Collision collision) {
-        if (aggro != 0 && collision.gameObject.CompareTag("player")) {
+        if (aggro != 0 && (collision.gameObject.CompareTag("player") || collision.gameObject.CompareTag("enemy"))) {
             if (Time.time > aggro_next) {
                 aggro_next = Time.time + aggro_cooldown;
                 float random = Random.value;
-                if (random <= aggro) {
+                float a = aggro;
+                // it is less likely that enemies push each other
+                if (collision.gameObject.CompareTag("enemy")) a = aggro_vs_other;
+                if (random <= a) {
                     Rigidbody player_rb = collision.gameObject.GetComponent<Rigidbody>();
                     Vector3 dir = -collision.impulse.normalized;
                     // enemy pushes player
@@ -57,6 +61,7 @@ public class passenger : MonoBehaviour {
 
     void Start() {
 		rb = GetComponent<Rigidbody>();
+        aggro_next = Time.time + aggro_cooldown * Random.value;
 	}
 
 	// Update is called once per frame
