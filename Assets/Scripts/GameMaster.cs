@@ -5,18 +5,28 @@ using UnityEngine.UI;
 
 public class GameMaster : MonoBehaviour {
 
+	enum TrainStatus {
+		Incoming,
+		DoorsOpening,
+		Waiting,
+		DoorsClosing,
+		Outgoing
+	}
+
 	public float minVelocity = 0.3f;
 	public float velocityFactor = 0.2f;
 	public float startPos = -100f;
 	public float departureTime = 30f;
 
 	GameObject train;
+	TrainStatus status;
 	GameObject[] playerGoals;
 	float startTime;
 
 	// Use this for initialization
 	void Start () {
 		startTime = -1f;
+		status = TrainStatus.Incoming;
 
 		GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
 		canvas.GetComponent<Canvas>().enabled = false;
