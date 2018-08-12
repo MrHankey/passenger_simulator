@@ -1,27 +1,28 @@
 fileFormatVersion: 2
-guid: 700c10a9cb04a45c7b82b8378c09bc5e
+guid: ea6717bfd95974f49bec5631abd5cae8
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
-    100000: //RootNode
-    100002: Cube
-    100004: Cube_001
-    400000: //RootNode
-    400002: Cube
-    400004: Cube_001
-    2100000: Material
-    2100002: Material_002
-    2300000: //RootNode
-    2300002: Cube
-    2300004: Cube_001
-    3300000: //RootNode
-    3300002: Cube
-    3300004: Cube_001
-    4300000: Cube
+    100000: Cube_000
+    100002: Cube_001
+    100004: Icosphere
+    100006: //RootNode
+    400000: Cube_000
+    400002: Cube_001
+    400004: Icosphere
+    400006: //RootNode
+    2100000: Material_003
+    2100002: Material_001
+    2100004: Material_002
+    2300000: Cube_000
+    2300002: Cube_001
+    2300004: Icosphere
+    3300000: Cube_000
+    3300002: Cube_001
+    3300004: Icosphere
+    4300000: Icosphere
     4300002: Cube_001
-    6400000: //RootNode
-    6400002: Cube
-    6400004: Cube_001
+    4300004: Cube_000
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -57,7 +58,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1

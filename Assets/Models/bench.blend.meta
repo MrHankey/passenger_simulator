@@ -1,27 +1,52 @@
 fileFormatVersion: 2
-guid: 700c10a9cb04a45c7b82b8378c09bc5e
+guid: 1695344d69ab2476180333d6e4a115d4
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     100002: Cube
     100004: Cube_001
+    100006: Cube_002
+    100008: Cube_003
+    100010: Cube_004
+    100012: Cube_005
+    100014: Cube_006
     400000: //RootNode
     400002: Cube
     400004: Cube_001
-    2100000: Material
-    2100002: Material_002
-    2300000: //RootNode
-    2300002: Cube
-    2300004: Cube_001
-    3300000: //RootNode
-    3300002: Cube
-    3300004: Cube_001
-    4300000: Cube
-    4300002: Cube_001
-    6400000: //RootNode
-    6400002: Cube
-    6400004: Cube_001
+    400006: Cube_002
+    400008: Cube_003
+    400010: Cube_004
+    400012: Cube_005
+    400014: Cube_006
+    2100000: Material_005
+    2100002: Material_007
+    2100004: Material_001
+    2100006: Material_009
+    2100008: Material_008
+    2100010: Material_006
+    2100012: Material_004
+    2300000: Cube
+    2300002: Cube_001
+    2300004: Cube_002
+    2300006: Cube_003
+    2300008: Cube_004
+    2300010: Cube_005
+    2300012: Cube_006
+    3300000: Cube
+    3300002: Cube_001
+    3300004: Cube_002
+    3300006: Cube_003
+    3300008: Cube_004
+    3300010: Cube_005
+    3300012: Cube_006
+    4300000: Cube_004
+    4300002: Cube
+    4300004: Cube_001
+    4300006: Cube_002
+    4300008: Cube_003
+    4300010: Cube_005
+    4300012: Cube_006
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}
@@ -57,7 +82,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 1
+    addColliders: 0
     importVisibility: 1
     importBlendShapes: 1
     importCameras: 1
