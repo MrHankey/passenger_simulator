@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 54072070594527312}
   - component: {fileID: 114618466554788728}
   m_Layer: 0
-  m_Name: PassiveEnemy
+  m_Name: AgressiveEnemy
   m_TagString: enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 5a32129c465fd8a458dbd58848e35026, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -117,8 +117,8 @@ MonoBehaviour:
   esc_eps: 2
   ctr_speed: 0.5
   ctr_eps: 2
-  aggro: 0
-  aggro_vs_other: 0
+  aggro: 0.6
+  aggro_vs_other: 0.2
   aggro_strength: 10
   aggro_cooldown: 2
 --- !u!136 &136996249628487282
