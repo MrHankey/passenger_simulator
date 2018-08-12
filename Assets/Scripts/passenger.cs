@@ -6,6 +6,7 @@ public enum State {
 	SearchDoor,
 	SearchSeat,
 	Done,
+    Push,
 }
 
 public class passenger : MonoBehaviour {
@@ -27,6 +28,7 @@ public class passenger : MonoBehaviour {
     public float aggro_strength = 10;
     public float aggro_cooldown = 2; // seconds
     private float aggro_next = 0;
+    private GameObject push;
 
     private void AddTargetVelocityImpulse(Vector3 targetVelocity)
     {
@@ -63,19 +65,22 @@ public class passenger : MonoBehaviour {
     }
 
     void OnCollisionStay(Collision collision) {
+        if (state == State.Push) return;
         if (aggro != 0 && (collision.gameObject.CompareTag("player") || collision.gameObject.CompareTag("enemy"))) {
             if (Time.time > aggro_next) {
                 aggro_next = Time.time + aggro_cooldown;
                 float random = Random.value;
                 float a = aggro;
                 // it is less likely that enemies push each other
-                if (collision.gameObject.CompareTag("enemy")) a = aggro_vs_other;
+                if (collision.gameObject.CompareTag("enemy")) a = 0*aggro_vs_other;
                 if (random <= a) {
-                    Rigidbody player_rb = collision.gameObject.GetComponent<Rigidbody>();
+                    //maybe use this too? or stun player
+                    //Vector3 dir = collision.impulse.normalized;
+                    //collision.gameObject.GetComponent<Rigidbody>().AddForce(-dir * aggro_strength * rb.mass, ForceMode.Impulse);
 
-                    // Apply impulse towards collider
-                    Vector3 dir = collision.impulse.normalized;
-                    rb.AddForce(dir * aggro_strength * rb.mass, ForceMode.Impulse);
+                    push = collision.gameObject;
+                    state = State.Push;
+                    dst_speed *= 2;
                 }
             }
         }
@@ -113,6 +118,14 @@ public class passenger : MonoBehaviour {
 				}
 				break;
 
+            case State.Push:
+                target = push.GetComponent<Transform>().position;
+                if (Time.time > aggro_next - aggro_cooldown + 1.0f) {
+                    state = State.SearchDoor; // only push for 0.5s
+                    dst_speed /= 2;
+                }
+                break;
+
 			case State.Done:
 				break;
 		}
@@ -120,31 +133,33 @@ public class passenger : MonoBehaviour {
 
         Vector3 dst_dir = new Vector3();
         Vector3 center_dir = new Vector3();
-
-        // I don't like other passengers
-        /*             _1
-       *     	/\
-         *____/  \____ _0
-         */
         Vector3 escape_dir = new Vector3();
-        Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
-        foreach (Collider o in others)
-        {
-            if (o.gameObject.tag != "enemy") continue;
-            if (!o.GetComponent<Rigidbody>()) continue;
-            Vector3 o_pos = o.GetComponent<Rigidbody>().position;
-            Vector3 o_dist = o_pos - rb.position;
-            o_dist.y = 0.0f;
-            float dst_sq;
-            dst_sq = o_dist.sqrMagnitude;
-            //float dst_sq = o_dist.magnitude;
-            if (dst_sq != 0.0f)
+
+        if (state != State.Push) {
+            // I don't like other passengers
+            /*             _1
+            *     	/\
+            *____/  \____ _0
+            */
+            Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
+            foreach (Collider o in others)
             {
-                float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
-                escape_dir += weight * -o_dist.normalized;
+                if (o.gameObject.tag != "enemy") continue;
+                if (!o.GetComponent<Rigidbody>()) continue;
+                Vector3 o_pos = o.GetComponent<Rigidbody>().position;
+                Vector3 o_dist = o_pos - rb.position;
+                o_dist.y = 0.0f;
+                float dst_sq;
+                dst_sq = o_dist.sqrMagnitude;
+                //float dst_sq = o_dist.magnitude;
+                if (dst_sq != 0.0f)
+                {
+                    float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
+                    escape_dir += weight * -o_dist.normalized;
+                }
             }
+            escape_dir.y = 0.0f;
         }
-        escape_dir.y = 0.0f;
 
         if (state != State.Done) {
 			// go to target
