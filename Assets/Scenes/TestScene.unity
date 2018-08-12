@@ -335,7 +335,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
-      value: PassiveEnemy (59)
+      value: AggroEnemy
       objectReference: {fileID: 0}
     - target: {fileID: 23275075627526816, guid: d340cb80a6ae74f49849bddc7ade350d,
         type: 2}
