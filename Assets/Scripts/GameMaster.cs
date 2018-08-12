@@ -47,31 +47,45 @@ public class GameMaster : MonoBehaviour {
 			case TrainStatus.Incoming:
 				vel = System.Math.Max(minVelocity, System.Math.Abs(train.transform.position.x));
 				train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
+
 				if (train.transform.position.x >= 0f) {
 					startTime = Time.time;
 					status = TrainStatus.DoorsOpening;
+					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
+						door.GetComponent<DoorController>().OpenDoor();
+					}
 				}
 				break;
 
 			case TrainStatus.DoorsOpening:
-				status = TrainStatus.Waiting;
+				if (Time.time - startTime > 3f) {
+					startTime = Time.time;
+					status = TrainStatus.Waiting;
+				}
 				break;
 
 			case TrainStatus.Waiting:
 				if (Time.time - startTime > departureTime) {
+					startTime = Time.time;
 					status = TrainStatus.DoorsClosing;
+					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
+						door.GetComponent<DoorController>().CloseDoor();
+					}
 				}
 				break;
 
 			case TrainStatus.DoorsClosing:
-				status = TrainStatus.Outgoing;
+				if (Time.time - startTime > 3f) {
+					startTime = Time.time;
+					status = TrainStatus.Outgoing;
+				}
 				break;
 
 			case TrainStatus.Outgoing:
 				vel = System.Math.Max(minVelocity, 2f * System.Math.Abs(train.transform.position.x));
 				train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
 
-				if (Time.time - startTime > departureTime + 10f) {
+				if (Time.time - startTime > 10f) {
 					GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
 					canvas.GetComponent<Canvas>().enabled = true;
 

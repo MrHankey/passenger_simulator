@@ -9,6 +9,8 @@ TagManager:
   - seat
   - UICanvas
   - ZonePlayerGoal
+  - enemy
+  - Door
   layers:
   - Default
   - TransparentFX
