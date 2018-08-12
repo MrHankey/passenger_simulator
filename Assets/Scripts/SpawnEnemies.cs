@@ -22,7 +22,6 @@ public class SpawnEnemies : MonoBehaviour {
         Quaternion rot = spawn_points[index].rotation;
         pos.x += (Random.value * 2.0f - 1.0f) * GetComponent<Transform>().localScale.x;
         pos.z += (Random.value * 2.0f - 1.0f) * GetComponent<Transform>().localScale.z;
-        GameObject o = Instantiate(enemy, pos, rot);
-        Transform trans = o.GetComponent<Transform>();
+        Instantiate(enemy, pos, rot);
     }
 }
