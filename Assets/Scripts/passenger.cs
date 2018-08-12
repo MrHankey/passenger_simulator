@@ -18,7 +18,24 @@ public class passenger : MonoBehaviour {
 	private Rigidbody rb;
 	private State state = State.SearchDoor;
 
-	void Start() {
+
+    private void OnTriggerEnter(Collider collision)
+    {
+        //foreach (ContactPoint contact in collision.contacts)
+        //{
+        //    Debug.DrawRay(contact.point, contact.normal, Color.red, 0.01f, false);
+        //}
+        if (collision.gameObject.CompareTag("door"))
+        {
+            state = State.SearchSeat;
+        }
+        else if (collision.gameObject.CompareTag("seat"))
+        {
+            state = State.Done;
+        }
+    }
+
+    void Start() {
 		rb = GetComponent<Rigidbody>();
 	}
 
@@ -35,14 +52,6 @@ public class passenger : MonoBehaviour {
 						target = door_pos;
 					}
 				}
-
-                // check if we are already inside
-                Vector3 dist = target - rb.position;
-                dist.y = 0.0f;
-
-                if (dist.sqrMagnitude < 2.0) {
-					state = State.SearchSeat;
-				}
 				break;
 
 			case State.SearchSeat:
@@ -55,57 +64,58 @@ public class passenger : MonoBehaviour {
 						target = seat_pos;
 					}
 				}
-
-				// check if we are already inside
-				if (rb.position.x < 0.0 && (target - rb.position).sqrMagnitude < 1.0) {
-					state = State.Done;
-				}
 				break;
 
 			case State.Done:
 				break;
 		}
 
-		if (state != State.Done) {
-			// go to target
-			Vector3 dst_dir = (target -  rb.position).normalized;
-			dst_dir.y = 0.0f;
 
-			// I don't like other passengers
-			/*             _1
-		   *     	/\
-			 *____/  \____ _0
-			 */
-			Vector3 escape_dir = new Vector3(0.0f, 0.0f, 0.0f);
-			Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
-			foreach (Collider o in others) {
-				if (o.gameObject.tag != "enemy")  continue;
-				if (!o.GetComponent<Rigidbody>()) continue;
-				Vector3 o_pos  = o.GetComponent<Rigidbody>().position;
-				Vector3 o_dist = o_pos - rb.position;
-				o_dist.y = 0.0f;
-				float dst_sq;
-				dst_sq = o_dist.sqrMagnitude;
-				//float dst_sq = o_dist.magnitude;
-				if (dst_sq != 0.0f) {
-					float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
-					escape_dir += weight * -o_dist.normalized;
-				}
-			}
-			escape_dir.y= 0.0f;
+        Vector3 dst_dir = new Vector3();
+        Vector3 center_dir = new Vector3();
+
+        // I don't like other passengers
+        /*             _1
+       *     	/\
+         *____/  \____ _0
+         */
+        Vector3 escape_dir = new Vector3();
+        Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
+        foreach (Collider o in others)
+        {
+            if (o.gameObject.tag != "enemy") continue;
+            if (!o.GetComponent<Rigidbody>()) continue;
+            Vector3 o_pos = o.GetComponent<Rigidbody>().position;
+            Vector3 o_dist = o_pos - rb.position;
+            o_dist.y = 0.0f;
+            float dst_sq;
+            dst_sq = o_dist.sqrMagnitude;
+            //float dst_sq = o_dist.magnitude;
+            if (dst_sq != 0.0f)
+            {
+                float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
+                escape_dir += weight * -o_dist.normalized;
+            }
+        }
+        escape_dir.y = 0.0f;
+
+        if (state != State.Done) {
+			// go to target
+			dst_dir = (target -  rb.position).normalized;
+			dst_dir.y = 0.0f;
 
 			// I want to stay to the center of the door
 			/* ___         __ _1
 			 *    \      /
 			 *     \____/     _0
 			 */
-			Vector3 center_dir = new Vector3(0.0f, 0.0f, 0.0f);
+			center_dir = new Vector3(0.0f, 0.0f, 0.0f);
 			float center_dist = target.z - rb.position.z;
 			float center_weight = Mathf.Max(0.0f, -1.0f + target.x - rb.position.x + ctr_eps * Mathf.Abs(center_dist));
 			center_dir.z = center_weight * Mathf.Sign(center_dist);
 			center_dir.z = Mathf.Min(1.0f, center_dir.z);
 
-			rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
 		}
+		rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
 	}
 }

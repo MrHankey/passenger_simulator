@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
 
-    public float speed;
+    public float speed = 5.0f;
+    public float maxVelocityChange = 0.5f;
 
     private Rigidbody rb;
 
@@ -16,18 +17,24 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        // Calculate how fast we should be moving
+        Vector3 targetVelocity = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+        targetVelocity = transform.TransformDirection(targetVelocity);
+        targetVelocity *= speed;
+
+        // Apply a force that attempts to reach our target velocity
+        Vector3 velocity = rb.velocity;
+        Vector3 velocityChange = (targetVelocity - velocity);
+        velocityChange.x = Mathf.Clamp(velocityChange.x, -maxVelocityChange, maxVelocityChange);
+        velocityChange.z = Mathf.Clamp(velocityChange.z, -maxVelocityChange, maxVelocityChange);
+        velocityChange.y = 0;
+
+        rb.AddForce(velocityChange, ForceMode.VelocityChange);
 
         float rotateHorizontal = Input.GetAxis("Mouse X") * 5.0f;
-
-        Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-
-        Vector3 movement_scaled = transform.TransformDirection(movement);
 
         //transform.rotation.y += rotateHorizontal;
         transform.Rotate(new Vector3(0.0f, rotateHorizontal, 0.0f));
 
-        rb.AddForce(movement_scaled.normalized * speed);
     }
 }
