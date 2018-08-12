@@ -18,6 +18,10 @@ public class passenger : MonoBehaviour {
 	private Rigidbody rb;
 	private State state = State.SearchDoor;
 
+    public float aggro;  // in [0,1)
+    public float aggro_strength = 10;
+    public float aggro_cooldown; // seconds
+    private float aggro_next = 0;
 
     private void OnTriggerEnter(Collider collision)
     {
@@ -32,6 +36,22 @@ public class passenger : MonoBehaviour {
         else if (collision.gameObject.CompareTag("seat"))
         {
             state = State.Done;
+        }
+    }
+
+    void OnCollisionStay(Collision collision) {
+        if (aggro != 0 && collision.gameObject.CompareTag("player")) {
+            if (Time.time > aggro_next) {
+                aggro_next = Time.time + aggro_cooldown;
+                float random = Random.value;
+                if (random <= aggro) {
+                    Rigidbody player_rb = collision.gameObject.GetComponent<Rigidbody>();
+                    Vector3 dir = -collision.impulse.normalized;
+                    // enemy pushes player
+                    player_rb.AddForce(dir * aggro_strength, ForceMode.Impulse);
+                    rb.AddForce(dir * aggro_strength / 2.5f, ForceMode.Impulse);
+                }
+            }
         }
     }
 

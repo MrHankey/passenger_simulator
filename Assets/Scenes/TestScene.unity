@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657868, g: 0.49641263, b: 0.57481706, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -336,6 +336,21 @@ Prefab:
     - target: {fileID: 1113988106381832, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
       propertyPath: m_Name
       value: PassiveEnemy (59)
+      objectReference: {fileID: 0}
+    - target: {fileID: 23275075627526816, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 5a32129c465fd8a458dbd58848e35026, type: 2}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114618466554788728, guid: d340cb80a6ae74f49849bddc7ade350d,
+        type: 2}
+      propertyPath: aggro_cooldown
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d340cb80a6ae74f49849bddc7ade350d, type: 2}
@@ -2955,6 +2970,14 @@ Prefab:
         type: 2}
       propertyPath: maxVelocityChange
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880629707833920, guid: dd6073a80db97664c89b30487144d13a, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1880629707833920, guid: dd6073a80db97664c89b30487144d13a, type: 2}
+      propertyPath: m_TagString
+      value: player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dd6073a80db97664c89b30487144d13a, type: 2}
