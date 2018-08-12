@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
 
     public float speed = 5.0f;
     public float maxVelocityChange = 0.5f;
+    public float sensitivity = 2.5f;
 
     private Rigidbody rb;
 
@@ -31,7 +32,7 @@ public class PlayerController : MonoBehaviour
 
         rb.AddForce(velocityChange, ForceMode.VelocityChange);
 
-        float rotateHorizontal = Input.GetAxis("Mouse X") * 5.0f;
+        float rotateHorizontal = Input.GetAxis("Mouse X") * sensitivity;
 
         //transform.rotation.y += rotateHorizontal;
         transform.Rotate(new Vector3(0.0f, rotateHorizontal, 0.0f));
