@@ -88,6 +88,13 @@ public class passenger : MonoBehaviour {
 
 	// Update is called once per frame
 	void FixedUpdate () {
+        // restet state if we are outside of the train -- assuming that the train in along the x-axis
+        GameObject train = GameObject.FindGameObjectsWithTag("Train")[0];
+        float train_max_z = train.GetComponent<Mesh>().bounds.max.z;
+        if (rb.position.z > train_max_z) {
+            state = State.SearchDoor;
+        }
+
 		Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
 		switch (state) {
 			case State.SearchDoor:
