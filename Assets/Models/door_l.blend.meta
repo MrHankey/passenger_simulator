@@ -7,21 +7,27 @@ ModelImporter:
     100002: Cube_001
     100004: Cube_002
     100006: //RootNode
+    100008: Cube_019
     400000: Cube
     400002: Cube_001
     400004: Cube_002
     400006: //RootNode
+    400008: Cube_019
     2100000: unnamed
     2100002: Material
+    2100004: Material_011
     2300000: Cube
     2300002: Cube_001
     2300004: Cube_002
+    2300006: Cube_019
     3300000: Cube
     3300002: Cube_001
     3300004: Cube_002
+    3300006: Cube_019
     4300000: Cube_001
     4300002: Cube
     4300004: Cube_002
+    4300006: Cube_019
     7400000: Default Take
     9500000: //RootNode
   externalObjects: {}

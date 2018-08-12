@@ -113,6 +113,17 @@ ModelImporter:
     100214: wheels7
     100216: wheels8
     100218: wheels9
+    100220: Cube_018
+    100222: Cube_019
+    100224: Cube_020
+    100226: Cube_021
+    100228: Cube_022
+    100230: Cube_023
+    100232: Cube_024
+    100234: Cube_025
+    100236: Cube_026
+    100238: Cube_027
+    100240: Cube_028
     400000: Cube_000
     400002: Cube_001
     400004: Cube_002
@@ -223,6 +234,17 @@ ModelImporter:
     400214: wheels7
     400216: wheels8
     400218: wheels9
+    400220: Cube_018
+    400222: Cube_019
+    400224: Cube_020
+    400226: Cube_021
+    400228: Cube_022
+    400230: Cube_023
+    400232: Cube_024
+    400234: Cube_025
+    400236: Cube_026
+    400238: Cube_027
+    400240: Cube_028
     2100000: Material_001
     2100002: Material_002
     2100004: Material_003
@@ -238,6 +260,16 @@ ModelImporter:
     2100024: unnamed
     2100026: Material
     2100028: Material_000
+    2100030: frontglass
+    2100032: Material_021
+    2100034: Material_016
+    2100036: Material_015
+    2100038: Material_014
+    2100040: Material_013
+    2100042: Material_020
+    2100044: Material_019
+    2100046: Material_018
+    2100048: Material_017
     2300000: Cube_000
     2300002: Cube_001
     2300004: Cube_002
@@ -347,6 +379,17 @@ ModelImporter:
     2300212: wheels7
     2300214: wheels8
     2300216: wheels9
+    2300218: Cube_018
+    2300220: Cube_019
+    2300222: Cube_020
+    2300224: Cube_021
+    2300226: Cube_022
+    2300228: Cube_023
+    2300230: Cube_024
+    2300232: Cube_025
+    2300234: Cube_026
+    2300236: Cube_027
+    2300238: Cube_028
     3300000: Cube_000
     3300002: Cube_001
     3300004: Cube_002
@@ -456,6 +499,17 @@ ModelImporter:
     3300212: wheels7
     3300214: wheels8
     3300216: wheels9
+    3300218: Cube_018
+    3300220: Cube_019
+    3300222: Cube_020
+    3300224: Cube_021
+    3300226: Cube_022
+    3300228: Cube_023
+    3300230: Cube_024
+    3300232: Cube_025
+    3300234: Cube_026
+    3300236: Cube_027
+    3300238: Cube_028
     4300000: Cube_001
     4300002: Cube_002
     4300004: waggon
@@ -565,6 +619,17 @@ ModelImporter:
     4300212: wheels9
     4300214: wheels8
     4300216: wheels7
+    4300218: Cube_018
+    4300220: Cube_020
+    4300222: Cube_019
+    4300224: Cube_024
+    4300226: Cube_023
+    4300228: Cube_022
+    4300230: Cube_021
+    4300232: Cube_028
+    4300234: Cube_027
+    4300236: Cube_026
+    4300238: Cube_025
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
