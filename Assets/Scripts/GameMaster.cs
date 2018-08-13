@@ -88,6 +88,10 @@ public class GameMaster : MonoBehaviour {
 	
 	// Update is called once per frame
 	void FixedUpdate () {
+		if (Input.GetKeyDown(KeyCode.Escape)) {
+			SceneManager.LoadScene("Credits");
+		}
+
 		float vel;
 
 		switch (status)
