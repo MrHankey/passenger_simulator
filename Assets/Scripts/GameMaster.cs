@@ -150,7 +150,8 @@ public class GameMaster : MonoBehaviour {
 					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
 						door.GetComponent<DoorAudio>().DoorShutUp();
 					}
-				}
+                    GameObject.Find("SoundOutgoing").GetComponent<AudioSource>().Play();
+                }
 				break;
 
 			case TrainStatus.Outgoing:
