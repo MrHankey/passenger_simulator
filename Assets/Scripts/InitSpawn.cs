@@ -27,7 +27,7 @@ public class InitSpawn : MonoBehaviour {
                 float x = pos.x + i * (size.x / count_x) - size.x / 2.0f + (Random.value * 2.0f - 1.0f)*0.5f;
                 float y = pos.y + 1.5f;
                 float z = pos.z + j * (size.z / count_z) - size.z/2.0f + (Random.value * 2.0f - 1.0f)*0.5f;
-                if (Random.value > 0.5)
+                if (Random.value > 0.4)
                 {
                     newEnemy = Instantiate(enemy, new Vector3(x, y, z), rot);
                 }

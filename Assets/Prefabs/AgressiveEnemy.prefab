@@ -211,14 +211,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVelocity: 1.4
   maxAccel: 5
-  maxForce: 5
+  maxForce: 1
   dst_speed: 2
   esc_speed: 2
   esc_eps: 2
   ctr_speed: 3
   ctr_eps: 3
-  aggro: 1
-  aggro_vs_other: 0.8
+  aggro: 0.5
+  aggro_vs_other: 1
   aggro_strength: 10
   aggro_cooldown: 2
 --- !u!114 &114729721590843390

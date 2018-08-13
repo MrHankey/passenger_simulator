@@ -210,7 +210,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioCooldown: 2
-  audioChance: 0.2
+  idleAudioChance: 0.2
+  bumpAudioChance: 0.1
+  aggroAudioChance: 0.3
 --- !u!114 &114618466554788728
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -224,7 +226,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxVelocity: 1.4
   maxAccel: 5
-  maxForce: 5
+  maxForce: 1
   dst_speed: 3
   esc_speed: 2
   esc_eps: 2
