@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class PassengerAudio : MonoBehaviour {
 
-	public float audioCooldown = 2f;
-	public float idleAudioChance = 0.2f;
-	public float bumpAudioChance = 0.1f;
-	public float aggroAudioChance = 0.3f;
+	public float idleAudioCooldown = 4f;
+	public float bumpAudioCooldown = 4f;
+	public float aggroAudioCooldown = 3f;
+	public float idleAudioChance = 0.03f;
+	public float bumpAudioChance = 0.02f;
+	public float aggroAudioChance = 0.2f;
 
 	private float timeOfLastAudio = 0;
 	private AudioSource source;
@@ -20,7 +22,7 @@ public class PassengerAudio : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Time.time - timeOfLastAudio > audioCooldown) {
+		if (Time.time - timeOfLastAudio > idleAudioCooldown) {
 			if (Random.value < idleAudioChance) {
 				source.clip = GameObject.Find("GameMaster")
 					.GetComponent<ClipPool>()
@@ -33,7 +35,7 @@ public class PassengerAudio : MonoBehaviour {
 	}
 
 	public void CheckBump() {
-		if (source.isPlaying || Time.time - timeOfLastAudio < audioCooldown) {
+		if (source.isPlaying || Time.time - timeOfLastAudio < bumpAudioCooldown) {
 			return;
 		}
 
@@ -47,7 +49,7 @@ public class PassengerAudio : MonoBehaviour {
 	}
 
 	public void CheckAggro() {
-		if (source.isPlaying || Time.time - timeOfLastAudio < audioCooldown) {
+		if (source.isPlaying || Time.time - timeOfLastAudio < aggroAudioCooldown) {
 			return;
 		}
 
