@@ -86,9 +86,13 @@ public class passenger : MonoBehaviour {
                     push = collision.gameObject;
                     state = State.Push;
                     dst_speed *= 2;
+                    gameObject.GetComponent<PassengerAudio>().CheckAggro();
                 }
             }
+
+            gameObject.GetComponent<PassengerAudio>().CheckBump();
         }
+
     }
 
     void Start() {
