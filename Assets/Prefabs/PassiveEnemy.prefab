@@ -61,7 +61,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 694428b216f32c54aa92abe53a819dc6, type: 2}
+  - {fileID: 2100000, guid: 29edab2c2c4973446924e30f04ad0b76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -209,7 +209,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 232d7f56e6d56408197605f74eca8288, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioCooldown: 2
+  idleAudioCooldown: 4
+  bumpAudioCooldown: 4
+  aggroAudioCooldown: 3
   idleAudioChance: 0.2
   bumpAudioChance: 0.1
   aggroAudioChance: 0.3
