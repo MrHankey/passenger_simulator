@@ -29,6 +29,7 @@ public class passenger : MonoBehaviour {
     public float aggro_cooldown = 2; // seconds
     private float aggro_next = 0;
     private GameObject push;
+    private Vector3 finalVelocity = new Vector3(0.0f,0.0f,0.0f);
 
     private void AddTargetVelocityImpulse(Vector3 targetVelocity)
     {
@@ -100,44 +101,50 @@ public class passenger : MonoBehaviour {
         aggro_next = Time.time + aggro_cooldown * Random.value;
 	}
 
-	// Update is called once per frame
-	void FixedUpdate () {
-		Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
-		switch (state) {
-			case State.SearchDoor:
-				target = new Vector3(-100000.0f, 0.0f, 0.0f);
-				GameObject[] doors = GameObject.FindGameObjectsWithTag("door");
-				foreach (GameObject d in doors) {
-					Vector3 door_pos = d.GetComponent<Transform>().position;
-					if ((rb.position - door_pos).magnitude < (rb.position - target).magnitude) {
-						target = door_pos;
-					}
-				}
-				break;
+    private void Update()
+    {
+        Vector3 target = new Vector3(0.0f, 0.0f, 0.0f);
+        switch (state)
+        {
+            case State.SearchDoor:
+                target = new Vector3(-100000.0f, 0.0f, 0.0f);
+                GameObject[] doors = GameObject.FindGameObjectsWithTag("door");
+                foreach (GameObject d in doors)
+                {
+                    Vector3 door_pos = d.GetComponent<Transform>().position;
+                    if ((rb.position - door_pos).magnitude < (rb.position - target).magnitude)
+                    {
+                        target = door_pos;
+                    }
+                }
+                break;
 
-			case State.SearchSeat:
-				//GetComponent<Renderer>().color = new Color(0,1,0);
-				target = new Vector3(-100000.0f, 0.0f, 0.0f);
-				GameObject[] seats = GameObject.FindGameObjectsWithTag("seat");
-				foreach (GameObject s in seats) {
-					Vector3 seat_pos = s.GetComponent<Transform>().position;
-					if ((rb.position - seat_pos).magnitude < (rb.position - target).magnitude) {
-						target = seat_pos;
-					}
-				}
-				break;
+            case State.SearchSeat:
+                //GetComponent<Renderer>().color = new Color(0,1,0);
+                target = new Vector3(-100000.0f, 0.0f, 0.0f);
+                GameObject[] seats = GameObject.FindGameObjectsWithTag("seat");
+                foreach (GameObject s in seats)
+                {
+                    Vector3 seat_pos = s.GetComponent<Transform>().position;
+                    if ((rb.position - seat_pos).magnitude < (rb.position - target).magnitude)
+                    {
+                        target = seat_pos;
+                    }
+                }
+                break;
 
             case State.Push:
                 target = push.GetComponent<Transform>().position;
-                if (Time.time > aggro_next - aggro_cooldown + 1.0f) {
+                if (Time.time > aggro_next - aggro_cooldown + 1.0f)
+                {
                     state = State.SearchDoor; // only push for 0.5s
                     dst_speed /= 2;
                 }
                 break;
 
-			case State.Done:
-				break;
-		}
+            case State.Done:
+                break;
+        }
 
 
         Vector3 dst_dir = new Vector3();
@@ -170,26 +177,31 @@ public class passenger : MonoBehaviour {
         //    escape_dir.y = 0.0f;
         //}
 
-        if (state != State.Done) {
-			// go to target
-			dst_dir = (target -  rb.position).normalized;
-			dst_dir.y = 0.0f;
+        if (state != State.Done)
+        {
+            // go to target
+            dst_dir = (target - rb.position).normalized;
+            dst_dir.y = 0.0f;
 
-			// I want to stay to the center of the door
-			/* ___         __ _1
+            // I want to stay to the center of the door
+            /* ___         __ _1
 			 *    \      /
 			 *     \____/     _0
 			 */
-			center_dir = new Vector3(0.0f, 0.0f, 0.0f);
-			float center_dist = target.x - rb.position.x;
-			float center_weight = Mathf.Max(0.0f, -1.0f + ctr_eps * Mathf.Abs(center_dist) + target.z - rb.position.z);
-			center_dir.x = center_weight * Mathf.Sign(center_dist);
-			center_dir.x = Mathf.Min(1.0f, center_dir.x);
+            center_dir = new Vector3(0.0f, 0.0f, 0.0f);
+            float center_dist = target.x - rb.position.x;
+            float center_weight = Mathf.Max(0.0f, -5.0f + ctr_eps * Mathf.Abs(center_dist) + Mathf.Abs(target.z - rb.position.z));
+            center_dir.x = center_weight * Mathf.Sign(center_dist);
+            center_dir.x = Mathf.Min(1.0f, center_dir.x);
 
-		}
+        }
         //rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
-        Vector3 finalVelocity = dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir;
+        finalVelocity = dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir;
         finalVelocity = finalVelocity.normalized * maxVelocity;
+    }
+
+    // Update is called once per frame
+    void FixedUpdate () {
         if (finalVelocity.magnitude > 0.01f)
         {
             AddTargetVelocityImpulse(finalVelocity);
