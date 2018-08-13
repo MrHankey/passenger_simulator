@@ -192,7 +192,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxSpeed: 5
-  maxForce: 0.1
+  maxForce: 0.2
   maxAccel: 5
   sensitivity: 2.5
 --- !u!114 &114930838989276476
