@@ -241,8 +241,8 @@ MonoBehaviour:
   clip23: {fileID: 8300000, guid: 6df0b10eddaad9448b575ffc3e868b4b, type: 3}
   clip24: {fileID: 8300000, guid: 4ce732bdf73f2ab459b33bd9d2e46bd4, type: 3}
   clip25: {fileID: 8300000, guid: 4786ae11a4064084c9a32a6e157227a4, type: 3}
-  clip26: {fileID: 8300000, guid: 4dbee83957f035a42aee1830ab0f7583, type: 3}
-  clip27: {fileID: 8300000, guid: f71a26a85b6136740a8e225654bc71f0, type: 3}
+  clip26: {fileID: 8300000, guid: ec2b090e4c617754aa73e6edad1a1faf, type: 3}
+  clip27: {fileID: 8300000, guid: 5b70108ecc4c20444861bdbc7f27f68a, type: 3}
   clip28: {fileID: 8300000, guid: 7727018849b624743b64ac6801aa651d, type: 3}
   clip29: {fileID: 8300000, guid: 276c3cc378e32f04f8de721c75f39a7f, type: 3}
   clip30: {fileID: 8300000, guid: 695f03b3710c35444810dc0be3ac365a, type: 3}
@@ -397,7 +397,7 @@ Canvas:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 158522637}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_RenderMode: 0
   m_Camera: {fileID: 0}
@@ -1251,7 +1251,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e8efe526b5bfe43ba8950debb0c8499f, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.287
+  m_Volume: 0.403
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3588,7 +3588,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 26b94ce3051754423a0d3a2c4cedb630, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.403
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -3732,7 +3732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.6509434, g: 0.6509434, b: 0.6509434, a: 1}
+  m_Color: {r: 0.745283, g: 0.745283, b: 0.745283, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
