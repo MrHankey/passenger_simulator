@@ -233,7 +233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioCooldown: 2
-  audioChance: 0.2
+  idleAudioChance: 0.2
+  bumpAudioChance: 0.02
+  aggroAudioChance: 0.3
 --- !u!136 &136996249628487282
 CapsuleCollider:
   m_ObjectHideFlags: 1
