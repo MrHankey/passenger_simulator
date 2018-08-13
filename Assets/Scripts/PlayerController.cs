@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float sensitivity = 2.5f;
 
     private Rigidbody rb;
+    private bool footsteps;
 
     void Start()
     {
@@ -39,5 +40,14 @@ public class PlayerController : MonoBehaviour
         //transform.rotation.y += rotateHorizontal;
         transform.Rotate(new Vector3(0.0f, rotateHorizontal, 0.0f));
 
+        if (Vector3.Magnitude(rb.velocity) > 1f && !footsteps) {
+		    GameObject.Find("Footsteps").GetComponent<AudioSource>().Play();
+            footsteps = true;
+            Debug.Log("play");
+        } else if (Vector3.Magnitude(rb.velocity) < 1f && footsteps) {
+		    GameObject.Find("Footsteps").GetComponent<AudioSource>().Pause();
+            footsteps = false;
+            Debug.Log("pause");
+        }
     }
 }

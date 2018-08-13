@@ -11,6 +11,7 @@ TagManager:
   - ZonePlayerGoal
   - enemy
   - Door
+  - MenuSound
   layers:
   - Default
   - TransparentFX

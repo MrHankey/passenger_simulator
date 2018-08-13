@@ -22,6 +22,7 @@ public class GameMaster : MonoBehaviour {
 	TrainStatus status;
 	GameObject[] playerGoals;
 	float startTime;
+	bool doorWarning = false;
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +37,8 @@ public class GameMaster : MonoBehaviour {
 		}
 
 		train = GameObject.FindGameObjectWithTag("Train");
+
+		GameObject.Find("AmbientSound").GetComponent<AudioSource>().Play();
 	}
 	
 	// Update is called once per frame
@@ -53,6 +56,7 @@ public class GameMaster : MonoBehaviour {
 					status = TrainStatus.DoorsOpening;
 					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
 						door.GetComponent<DoorController>().OpenDoor();
+						door.GetComponent<DoorAudio>().DoorOpening();
 					}
 				}
 				break;
@@ -61,15 +65,26 @@ public class GameMaster : MonoBehaviour {
 				if (Time.time - startTime > 3f) {
 					startTime = Time.time;
 					status = TrainStatus.Waiting;
+					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
+						door.GetComponent<DoorAudio>().DoorShutUp();
+					}
 				}
 				break;
 
 			case TrainStatus.Waiting:
+				if (!doorWarning && Time.time - startTime > departureTime - 3f) {
+					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
+						door.GetComponent<DoorAudio>().DoorWarning();
+					}
+					doorWarning = true;
+				}
+
 				if (Time.time - startTime > departureTime) {
 					startTime = Time.time;
 					status = TrainStatus.DoorsClosing;
 					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
 						door.GetComponent<DoorController>().CloseDoor();
+						door.GetComponent<DoorAudio>().DoorClosing();
 					}
 				}
 				break;
@@ -78,6 +93,9 @@ public class GameMaster : MonoBehaviour {
 				if (Time.time - startTime > 3f) {
 					startTime = Time.time;
 					status = TrainStatus.Outgoing;
+					foreach (GameObject door in GameObject.FindGameObjectsWithTag("Door")) {
+						door.GetComponent<DoorAudio>().DoorShutUp();
+					}
 				}
 				break;
 

@@ -53,7 +53,7 @@ public class MenuSound : MonoBehaviour {
             {
                 audioSource.clip = theme;
                 audioSource.Play();
-                themeStarted = false;
+                themeStarted = true;
                 
             }
         }
