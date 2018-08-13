@@ -21,7 +21,7 @@ public class passenger : MonoBehaviour {
 	public float ctr_speed;
 	public float ctr_eps = 1;
 	private Rigidbody rb;
-	private State state = State.SearchDoor;
+	private State state = State.Done;
 
     public float aggro;  // in [0,1)
     public float aggro_vs_other;  // in [0,1)
@@ -62,6 +62,11 @@ public class passenger : MonoBehaviour {
         {
             state = State.Done;
         }
+    }
+
+    public void SearchDoor()
+    {
+        state = State.SearchDoor;
     }
 
     void OnCollisionStay(Collision collision) {
@@ -135,31 +140,31 @@ public class passenger : MonoBehaviour {
         Vector3 center_dir = new Vector3();
         Vector3 escape_dir = new Vector3();
 
-        if (state != State.Push) {
-            // I don't like other passengers
-            /*             _1
-            *     	/\
-            *____/  \____ _0
-            */
-            Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
-            foreach (Collider o in others)
-            {
-                if (o.gameObject.tag != "enemy") continue;
-                if (!o.GetComponent<Rigidbody>()) continue;
-                Vector3 o_pos = o.GetComponent<Rigidbody>().position;
-                Vector3 o_dist = o_pos - rb.position;
-                o_dist.y = 0.0f;
-                float dst_sq;
-                dst_sq = o_dist.sqrMagnitude;
-                //float dst_sq = o_dist.magnitude;
-                if (dst_sq != 0.0f)
-                {
-                    float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
-                    escape_dir += weight * -o_dist.normalized;
-                }
-            }
-            escape_dir.y = 0.0f;
-        }
+        //if (state != State.Push) {
+        //    // I don't like other passengers
+        //    /*             _1
+        //    *     	/\
+        //    *____/  \____ _0
+        //    */
+        //    Collider[] others = Physics.OverlapSphere(rb.position, 20); // just some randius
+        //    foreach (Collider o in others)
+        //    {
+        //        if (o.gameObject.tag != "enemy") continue;
+        //        if (!o.GetComponent<Rigidbody>()) continue;
+        //        Vector3 o_pos = o.GetComponent<Rigidbody>().position;
+        //        Vector3 o_dist = o_pos - rb.position;
+        //        o_dist.y = 0.0f;
+        //        float dst_sq;
+        //        dst_sq = o_dist.sqrMagnitude;
+        //        //float dst_sq = o_dist.magnitude;
+        //        if (dst_sq != 0.0f)
+        //        {
+        //            float weight = Mathf.Max(0.0f, 1.0f - esc_eps * dst_sq);
+        //            escape_dir += weight * -o_dist.normalized;
+        //        }
+        //    }
+        //    escape_dir.y = 0.0f;
+        //}
 
         if (state != State.Done) {
 			// go to target
@@ -183,7 +188,7 @@ public class passenger : MonoBehaviour {
         if (finalVelocity.magnitude > 0.01f)
         {
             AddTargetVelocityImpulse(finalVelocity);
-            transform.forward = finalVelocity.normalized;
+            transform.forward = Vector3.Lerp(transform.forward, finalVelocity.normalized, 0.1f);
         }
 	}
 }
