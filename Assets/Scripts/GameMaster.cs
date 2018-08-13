@@ -18,25 +18,28 @@ public class GameMaster : MonoBehaviour {
 	public float velocityFactor = 0.2f;
 	public float startPos = -100f;
 	public float departureTime = 30f;
+    private float fadeStart;
+    public float fadeDuration = 3.0f;
+    private bool fadeIn = false;
+    private bool gameFinished;
 
 	GameObject train;
 	TrainStatus status;
 	GameObject[] playerGoals;
+    Image fadeImage;
 	float startTime;
 	bool doorWarning = false;
 
 	// Use this for initialization
 	void Start () {
-		status = TrainStatus.Incoming;
-		startTime = Time.time;
+        gameFinished = false;
+        status = TrainStatus.Incoming;
+        fadeImage = GameObject.Find("Canvas/Image").GetComponent<Image>();
+        FadeIn();
 
-		GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
-		if (StaticContainer.origin == "menu") {
-			canvas.GetComponent<Canvas>().enabled = false;
-		} else {
-			canvas.GetComponent<Canvas>().enabled = true;
-			GameObject.Find("Canvas/Result").GetComponent<Text>().enabled = false;
-		}
+        GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
+        canvas.GetComponent<Canvas>().enabled = true;
+        GameObject.Find("Canvas/Result").GetComponent<Text>().enabled = false;
 
 		playerGoals = GameObject.FindGameObjectsWithTag("ZonePlayerGoal");
 		foreach (GameObject goal in playerGoals) {
@@ -46,7 +49,42 @@ public class GameMaster : MonoBehaviour {
 		train = GameObject.FindGameObjectWithTag("Train");
 
 		GameObject.Find("AmbientSound").GetComponent<AudioSource>().Play();
-	}
+
+        startTime = Time.time;
+        GameObject.Find("Canvas/NextDay").GetComponent<Text>().enabled = true;
+    }
+
+    private void Update()
+    {
+        float diff = Time.time - fadeStart;
+        if ( diff  < fadeDuration)
+        {
+            if (fadeIn)
+            {
+                Color oldColor = fadeImage.color;
+                oldColor.a = Mathf.SmoothStep(1.0f, 0.0f, diff / fadeDuration);
+                fadeImage.color = oldColor;
+            }
+            else
+            {
+                Color oldColor = fadeImage.color;
+                oldColor.a = Mathf.SmoothStep(0.0f, 1.0f, diff / fadeDuration);
+                fadeImage.color = oldColor;
+            }
+        }
+    }
+
+    void FadeIn()
+    {
+        fadeIn = true;
+        fadeStart = Time.time;
+    }
+
+    void FadeOut()
+    {
+        fadeIn = false;
+        fadeStart = Time.time;
+    }
 	
 	// Update is called once per frame
 	void FixedUpdate () {
@@ -59,7 +97,7 @@ public class GameMaster : MonoBehaviour {
 		switch (status)
 		{
 			case TrainStatus.Incoming:
-				if (Time.time - startTime > 3f) {
+				if (Time.time - startTime > 5f) {
 					GameObject.Find("Canvas/NextDay").GetComponent<Text>().enabled = false;
 				}
 
@@ -124,12 +162,11 @@ public class GameMaster : MonoBehaviour {
                 vel = System.Math.Min(vel, 30.0f);
                 train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
 
-				if (Time.time - startTime > 7f) {
-					GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
-					canvas.GetComponent<Canvas>().enabled = true;
+				if (Time.time - startTime > 5f && !gameFinished ) {
+                    gameFinished = true;
+                    FadeOut();
 					
-					GameObject.Find("Canvas/NextDay")
-						.GetComponent<Text>().enabled = false;
+					GameObject.Find("Canvas/NextDay").GetComponent<Text>().enabled = false;
 
 					GameObject text = GameObject.Find("Canvas/Result");
 					text.GetComponent<Text>().enabled = true;
@@ -146,7 +183,7 @@ public class GameMaster : MonoBehaviour {
 					}
 				}
 
-				if (Time.time - startTime > 10f) {
+				if (Time.time - startTime > 9f) {
 					StaticContainer.origin = "game";
 					SceneManager.LoadScene("MainScene");
 				}
