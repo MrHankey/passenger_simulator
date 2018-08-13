@@ -43,11 +43,9 @@ public class PlayerController : MonoBehaviour
         if (Vector3.Magnitude(rb.velocity) > 1f && !footsteps) {
 		    GameObject.Find("Footsteps").GetComponent<AudioSource>().Play();
             footsteps = true;
-            Debug.Log("play");
         } else if (Vector3.Magnitude(rb.velocity) < 1f && footsteps) {
 		    GameObject.Find("Footsteps").GetComponent<AudioSource>().Pause();
             footsteps = false;
-            Debug.Log("pause");
         }
     }
 }

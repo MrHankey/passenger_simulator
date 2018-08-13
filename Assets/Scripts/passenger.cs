@@ -71,7 +71,7 @@ public class passenger : MonoBehaviour {
 
     void OnCollisionStay(Collision collision) {
         if (state == State.Push) return;
-        if (aggro != 0 && (collision.gameObject.CompareTag("player") || collision.gameObject.CompareTag("enemy"))) {
+        if (aggro != 0 && (collision.gameObject.CompareTag("Player") || collision.gameObject.CompareTag("enemy"))) {
             if (Time.time > aggro_next) {
                 aggro_next = Time.time + aggro_cooldown;
                 float random = Random.value;
