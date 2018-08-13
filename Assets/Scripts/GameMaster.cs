@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameMaster : MonoBehaviour {
 
@@ -27,9 +28,15 @@ public class GameMaster : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		status = TrainStatus.Incoming;
+		startTime = Time.time;
 
 		GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
-		canvas.GetComponent<Canvas>().enabled = false;
+		if (StaticContainer.origin == "menu") {
+			canvas.GetComponent<Canvas>().enabled = false;
+		} else {
+			canvas.GetComponent<Canvas>().enabled = true;
+			GameObject.Find("Canvas/Result").GetComponent<Text>().enabled = false;
+		}
 
 		playerGoals = GameObject.FindGameObjectsWithTag("ZonePlayerGoal");
 		foreach (GameObject goal in playerGoals) {
@@ -48,6 +55,10 @@ public class GameMaster : MonoBehaviour {
 		switch (status)
 		{
 			case TrainStatus.Incoming:
+				if (Time.time - startTime > 3f) {
+					GameObject.Find("Canvas/NextDay").GetComponent<Text>().enabled = false;
+				}
+
 				vel = System.Math.Max(minVelocity, System.Math.Abs(train.transform.position.x));
                 vel = System.Math.Min(vel, 30.0f);
 				train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
@@ -109,22 +120,31 @@ public class GameMaster : MonoBehaviour {
                 vel = System.Math.Min(vel, 30.0f);
                 train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
 
-				if (Time.time - startTime > 10f) {
+				if (Time.time - startTime > 7f) {
 					GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
 					canvas.GetComponent<Canvas>().enabled = true;
+					
+					GameObject.Find("Canvas/NextDay")
+						.GetComponent<Text>().enabled = false;
 
 					GameObject text = GameObject.Find("Canvas/Result");
-					text.GetComponent<Text>().text = "Loss";
+					text.GetComponent<Text>().enabled = true;
+					text.GetComponent<Text>().text = "Better luck tomorrow";
 
 					GameObject player = GameObject.FindGameObjectWithTag("Player");
 					foreach (GameObject zone in playerGoals) {
 						if (player.GetComponent<Collider>().bounds.Intersects(
 							zone.GetComponent<Collider>().bounds
 						)) {
-							text.GetComponent<Text>().text = "Win";
+							text.GetComponent<Text>().text = "Hooray, you made it";
 							break;
 						}
 					}
+				}
+
+				if (Time.time - startTime > 10f) {
+					StaticContainer.origin = "game";
+					SceneManager.LoadScene("MainScene");
 				}
 				break;
 
