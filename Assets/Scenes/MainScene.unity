@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 23601888}
   - component: {fileID: 23601887}
+  - component: {fileID: 23601889}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: Untagged
@@ -157,6 +158,42 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &23601889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 23601886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7773d58cb3a324e41b6a6e583a0628bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip1: {fileID: 8300000, guid: 978b79c70eace6a49a9af6271f9b6643, type: 3}
+  clip2: {fileID: 8300000, guid: 5ecc445b8f5a0f647b8e879e0bcc030a, type: 3}
+  clip3: {fileID: 8300000, guid: a9090c10f7bc681459612ab096f42e3e, type: 3}
+  clip4: {fileID: 8300000, guid: a1ff974b035a60547ac75d92378b16c6, type: 3}
+  clip5: {fileID: 8300000, guid: 2820c8dc99259c943bc83e1b9c04b2a0, type: 3}
+  clip6: {fileID: 8300000, guid: 3713f812f829c6d4eaf4054155fcb0fe, type: 3}
+  clip7: {fileID: 8300000, guid: 030f5b77c6b18804cb0be13a30847ded, type: 3}
+  clip8: {fileID: 8300000, guid: e459d67f8d8df8a48ba6fbe1cb95d9c1, type: 3}
+  clip9: {fileID: 8300000, guid: 570fc68756f3a314785b617cc505be43, type: 3}
+  clip10: {fileID: 8300000, guid: 908026dff7f76ee438e43e587d7076c1, type: 3}
+  clip11: {fileID: 8300000, guid: d509db4e1cc74ef4c9810957739e05d1, type: 3}
+  clip12: {fileID: 8300000, guid: db02cba8c9b03554cb198a97de04293b, type: 3}
+  clip13: {fileID: 8300000, guid: f2fa89e7b71b2a948b0b911ce15ac6b6, type: 3}
+  clip14: {fileID: 8300000, guid: 80df6840290b31143a245fe8fbe330fd, type: 3}
+  clip15: {fileID: 8300000, guid: e1d710eac67587546ae1588e3432c6a0, type: 3}
+  clip16: {fileID: 8300000, guid: 308038a47529db9439b22988c39943ed, type: 3}
+  clip17: {fileID: 8300000, guid: 2fd5417468bd45b4b9f1f9b2f951f0e6, type: 3}
+  clip18: {fileID: 8300000, guid: 51f758497da946541af86de0fc255f34, type: 3}
+  clip19: {fileID: 8300000, guid: 6cf3f708146dfcf48a77e5ffd1ef5029, type: 3}
+  clip20: {fileID: 8300000, guid: fd00c933f070e0a48874ba0d7135076c, type: 3}
+  clip21: {fileID: 8300000, guid: a05806dc5e97c694fa48c4b612cc85b4, type: 3}
+  clip22: {fileID: 8300000, guid: bf34c433c78c673488f9b2dce48f144a, type: 3}
+  clip23: {fileID: 0}
+  clip24: {fileID: 0}
+  clip25: {fileID: 0}
 --- !u!1 &126304431
 GameObject:
   m_ObjectHideFlags: 0
