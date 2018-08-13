@@ -14,6 +14,7 @@ ModelImporter:
     2100000: Material_003
     2100002: Material_001
     2100004: Material_002
+    2100006: Material_000
     2300000: Cube_000
     2300002: Cube_001
     2300004: Icosphere
@@ -26,7 +27,27 @@ ModelImporter:
     7400000: Default Take
     9500000: //RootNode
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_000
+    second: {fileID: 2100000, guid: 38897412a139413419676e5665595028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_001
+    second: {fileID: 2100000, guid: 38897412a139413419676e5665595028, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_002
+    second: {fileID: 2100000, guid: 4c84d008dc6e2d1418f35094572f1b09, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material_003
+    second: {fileID: 2100000, guid: 88dccaaaeb59517489aa834ac0fd2481, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
