@@ -49,6 +49,7 @@ public class GameMaster : MonoBehaviour {
 		{
 			case TrainStatus.Incoming:
 				vel = System.Math.Max(minVelocity, System.Math.Abs(train.transform.position.x));
+                vel = System.Math.Min(vel, 30.0f);
 				train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
 
 				if (train.transform.position.x >= 0f) {
@@ -58,6 +59,10 @@ public class GameMaster : MonoBehaviour {
 						door.GetComponent<DoorController>().OpenDoor();
 						door.GetComponent<DoorAudio>().DoorOpening();
 					}
+                    foreach (GameObject enemy in GameObject.FindGameObjectsWithTag("enemy"))
+                    {
+                        enemy.GetComponent<passenger>().SearchDoor();
+                    }
 				}
 				break;
 
@@ -101,7 +106,8 @@ public class GameMaster : MonoBehaviour {
 
 			case TrainStatus.Outgoing:
 				vel = System.Math.Max(minVelocity, 2f * System.Math.Abs(train.transform.position.x));
-				train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
+                vel = System.Math.Min(vel, 30.0f);
+                train.transform.position += new Vector3(Time.deltaTime * vel * velocityFactor, 0f, 0f);
 
 				if (Time.time - startTime > 10f) {
 					GameObject canvas = GameObject.FindGameObjectWithTag("UICanvas");
