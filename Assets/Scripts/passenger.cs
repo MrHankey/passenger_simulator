@@ -39,7 +39,7 @@ public class passenger : MonoBehaviour {
         // Maybe re-enable
         //velocityChange.x = Mathf.Clamp(velocityChange.x, -maxAccel, maxAccel);
         //velocityChange.z = Mathf.Clamp(velocityChange.z, -maxAccel, maxAccel);
-        //velocityChange.y = 0;
+        velocityChange.y = 0;
 
         //clamp max force
         velocityChange = Vector3.ClampMagnitude(velocityChange, maxForce);
@@ -58,10 +58,10 @@ public class passenger : MonoBehaviour {
         {
             state = State.SearchSeat;
         }
-        else if (collision.gameObject.CompareTag("seat"))
-        {
-            state = State.Done;
-        }
+        //else if (collision.gameObject.CompareTag("seat"))
+        //{
+        //    state = State.Done;
+        //}
     }
 
     public void SearchDoor()
@@ -185,6 +185,7 @@ public class passenger : MonoBehaviour {
 		}
         //rb.AddForce(dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir);
         Vector3 finalVelocity = dst_speed * dst_dir + esc_speed * escape_dir + ctr_speed * center_dir;
+        finalVelocity = finalVelocity.normalized * maxVelocity;
         if (finalVelocity.magnitude > 0.01f)
         {
             AddTargetVelocityImpulse(finalVelocity);
