@@ -32,6 +32,9 @@ public class GameMaster : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+
         gameFinished = false;
         status = TrainStatus.Incoming;
         fadeImage = GameObject.Find("Canvas/Image").GetComponent<Image>();
